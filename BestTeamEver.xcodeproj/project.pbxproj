@@ -15,6 +15,9 @@
 		549D065D28984310004751A0 /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D065C28984310004751A0 /* PersonListView.swift */; };
 		549D065F28984523004751A0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D065E28984523004751A0 /* DetailView.swift */; };
 		549D066528986B03004751A0 /* BlackOpsOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 549D066428986B03004751A0 /* BlackOpsOne-Regular.ttf */; };
+		549D066828986E91004751A0 /* PersonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D066728986E91004751A0 /* PersonCard.swift */; };
+		549D066A289872A3004751A0 /* kitten-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 549D0669289872A3004751A0 /* kitten-sound.mp3 */; };
+		549D066D28987447004751A0 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D066C28987447004751A0 /* SoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		549D065E28984523004751A0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		549D066328985A3F004751A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		549D066428986B03004751A0 /* BlackOpsOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BlackOpsOne-Regular.ttf"; sourceTree = "<group>"; };
+		549D066728986E91004751A0 /* PersonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCard.swift; sourceTree = "<group>"; };
+		549D0669289872A3004751A0 /* kitten-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "kitten-sound.mp3"; sourceTree = "<group>"; };
+		549D066C28987447004751A0 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,12 @@
 		549D064628983968004751A0 /* BestTeamEver */ = {
 			isa = PBXGroup;
 			children = (
-				549D066328985A3F004751A0 /* Info.plist */,
-				549D066228985A03004751A0 /* Resources */,
-				549D0659289841C9004751A0 /* ViewModels */,
-				549D0658289841C3004751A0 /* Views */,
-				549D0655289840D2004751A0 /* Models */,
 				549D064728983968004751A0 /* BestTeamEverApp.swift */,
+				549D0655289840D2004751A0 /* Models */,
+				549D0658289841C3004751A0 /* Views */,
+				549D066228985A03004751A0 /* Resources */,
+				549D066B28987436004751A0 /* Helpers */,
+				549D066328985A3F004751A0 /* Info.plist */,
 			);
 			path = BestTeamEver;
 			sourceTree = "<group>";
@@ -106,11 +112,38 @@
 		549D066228985A03004751A0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				549D0659289841C9004751A0 /* ViewModels */,
+				549D0669289872A3004751A0 /* kitten-sound.mp3 */,
 				549D066428986B03004751A0 /* BlackOpsOne-Regular.ttf */,
 				549D064B2898396E004751A0 /* Assets.xcassets */,
 				549D064D2898396E004751A0 /* Preview Content */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		549D066628986E79004751A0 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				549D066728986E91004751A0 /* PersonCard.swift */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		549D066B28987436004751A0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				549D066E28987452004751A0 /* HelperFunctions */,
+				549D066628986E79004751A0 /* HelperViews */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		549D066E28987452004751A0 /* HelperFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				549D066C28987447004751A0 /* SoundManager.swift */,
+			);
+			path = HelperFunctions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +207,7 @@
 				549D064F2898396E004751A0 /* Preview Assets.xcassets in Resources */,
 				549D064C2898396E004751A0 /* Assets.xcassets in Resources */,
 				549D066528986B03004751A0 /* BlackOpsOne-Regular.ttf in Resources */,
+				549D066A289872A3004751A0 /* kitten-sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +222,8 @@
 				549D065F28984523004751A0 /* DetailView.swift in Sources */,
 				549D064828983968004751A0 /* BestTeamEverApp.swift in Sources */,
 				549D065B28984222004751A0 /* PersonListViewModel.swift in Sources */,
+				549D066828986E91004751A0 /* PersonCard.swift in Sources */,
+				549D066D28987447004751A0 /* SoundManager.swift in Sources */,
 				549D065D28984310004751A0 /* PersonListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

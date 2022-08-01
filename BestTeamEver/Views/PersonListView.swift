@@ -20,14 +20,14 @@ struct PersonListView: View {
         NavigationView {
             VStack {
                 Text("Coding Cats")
-                    .font(Font.custom("BlackOpsOne-Regular", size: 32))
+                    .font(Font.custom("BlackOpsOne-Regular", size: 33))
                     .bold()
                     .foregroundColor(Color.cyan)
                     
                     NavigationLink {
                         DetailView(person: viewModel.persons[0], personViewModel: viewModel)
                     } label: {
-                        Card(text: "\(viewModel.persons[0].name)", imageName: "\(viewModel.persons[0].image)", height: 190, width: 170)
+                        Card(text: "\(viewModel.persons[0].name)", imageName: "\(viewModel.persons[0].image)", height: 190, width: 160)
                     }
                 
                     LazyVGrid(columns: columns, alignment: .center) {
@@ -35,8 +35,9 @@ struct PersonListView: View {
                             Button {
                                 isPresentingPerson = person
                                 showingSheet.toggle()
+                                SoundManager.instance.playSound()
                             } label: {
-                                Card(text: "\(person.name)", imageName: "\(person.image)", height: 150, width: 150)
+                                Card(text: "\(person.name)", imageName: "\(person.image)", height: 150, width: 140)
                             }
                         }
                         .sheet(item: $isPresentingPerson) { person in
@@ -46,7 +47,6 @@ struct PersonListView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
         }
-        
         .onAppear {
             viewModel.loadFromPersistenceStore()
         }
@@ -56,30 +56,5 @@ struct PersonListView: View {
 struct PersonListView_Previews: PreviewProvider {
     static var previews: some View {
         PersonListView()
-    }
-}
-
-struct Card: View {
-    var text: String
-    var imageName: String
-    var height: CGFloat
-    var width: CGFloat
-    
-    var body: some View {
-        VStack {
-            Image(imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .padding()
-                .frame(width: width, height: height)
-            Text(text)
-                .font(Font.custom("BlackOpsOne-Regular", size: 17))
-                .bold()
-                .padding(.bottom)
-                .foregroundColor(.primary)
-        }
-        .background(LinearGradient(colors: [.cyan, .pink, .orange], startPoint: .top, endPoint: .bottom).opacity(0.5))
-        .cornerRadius(20)
-        .shadow(color: Color.gray, radius: 10, x: 5, y: 3)
     }
 }

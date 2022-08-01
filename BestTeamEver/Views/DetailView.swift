@@ -13,17 +13,20 @@ struct DetailView: View {
     @ObservedObject var personViewModel: PersonListViewModel
     
     var body: some View {
-        VStack(spacing: 20) {
-            Image("\(person.image)")
-            Text("\(person.name)")
-                .font(.title)
-                .bold()
-            Text("\(person.title)")
-                .font(.title2)
-                .padding(.bottom)
-            Text("\(person.bio)")
-                .font(.body)
-                .padding(.horizontal)
+        ZStack {
+            LinearGradient(colors: [.yellow, .pink, .orange], startPoint: .top, endPoint: .bottom).opacity(0.2).edgesIgnoringSafeArea(.all)
+            VStack(spacing: 20) {
+                Image("\(person.image)")
+                Text("\(person.name)")
+                    .font(.title)
+                    .bold()
+                Text("\(person.title)")
+                    .font(.title2)
+                    .padding(.bottom)
+                Text("\(person.bio)")
+                    .font(.body)
+                    .padding(.horizontal)
+            }
         }
     }
 }
