@@ -14,7 +14,7 @@
 		549D065B28984222004751A0 /* PersonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D065A28984222004751A0 /* PersonListViewModel.swift */; };
 		549D065D28984310004751A0 /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D065C28984310004751A0 /* PersonListView.swift */; };
 		549D065F28984523004751A0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D065E28984523004751A0 /* DetailView.swift */; };
-		549D0661289859FD004751A0 /* RampartOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 549D0660289859FD004751A0 /* RampartOne-Regular.ttf */; };
+		549D066528986B03004751A0 /* BlackOpsOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 549D066428986B03004751A0 /* BlackOpsOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		549D065A28984222004751A0 /* PersonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewModel.swift; sourceTree = "<group>"; };
 		549D065C28984310004751A0 /* PersonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListView.swift; sourceTree = "<group>"; };
 		549D065E28984523004751A0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		549D0660289859FD004751A0 /* RampartOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RampartOne-Regular.ttf"; sourceTree = "<group>"; };
 		549D066328985A3F004751A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		549D066428986B03004751A0 /* BlackOpsOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BlackOpsOne-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +106,9 @@
 		549D066228985A03004751A0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				549D066428986B03004751A0 /* BlackOpsOne-Regular.ttf */,
 				549D064B2898396E004751A0 /* Assets.xcassets */,
 				549D064D2898396E004751A0 /* Preview Content */,
-				549D0660289859FD004751A0 /* RampartOne-Regular.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 			files = (
 				549D064F2898396E004751A0 /* Preview Assets.xcassets in Resources */,
 				549D064C2898396E004751A0 /* Assets.xcassets in Resources */,
-				549D0661289859FD004751A0 /* RampartOne-Regular.ttf in Resources */,
+				549D066528986B03004751A0 /* BlackOpsOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

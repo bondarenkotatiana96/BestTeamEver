@@ -13,7 +13,18 @@ struct DetailView: View {
     @ObservedObject var personViewModel: PersonListViewModel
     
     var body: some View {
-        Text("\(person.title)")
+        VStack(spacing: 20) {
+            Image("\(person.image)")
+            Text("\(person.name)")
+                .font(.title)
+                .bold()
+            Text("\(person.title)")
+                .font(.title2)
+                .padding(.bottom)
+            Text("\(person.bio)")
+                .font(.body)
+                .padding(.horizontal)
+        }
     }
 }
 
