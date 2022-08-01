@@ -14,6 +14,7 @@
 		549D065B28984222004751A0 /* PersonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D065A28984222004751A0 /* PersonListViewModel.swift */; };
 		549D065D28984310004751A0 /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D065C28984310004751A0 /* PersonListView.swift */; };
 		549D065F28984523004751A0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D065E28984523004751A0 /* DetailView.swift */; };
+		549D0661289859FD004751A0 /* RampartOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 549D0660289859FD004751A0 /* RampartOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		549D065A28984222004751A0 /* PersonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewModel.swift; sourceTree = "<group>"; };
 		549D065C28984310004751A0 /* PersonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListView.swift; sourceTree = "<group>"; };
 		549D065E28984523004751A0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		549D0660289859FD004751A0 /* RampartOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RampartOne-Regular.ttf"; sourceTree = "<group>"; };
+		549D066328985A3F004751A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +60,12 @@
 		549D064628983968004751A0 /* BestTeamEver */ = {
 			isa = PBXGroup;
 			children = (
+				549D066328985A3F004751A0 /* Info.plist */,
+				549D066228985A03004751A0 /* Resources */,
 				549D0659289841C9004751A0 /* ViewModels */,
 				549D0658289841C3004751A0 /* Views */,
 				549D0655289840D2004751A0 /* Models */,
 				549D064728983968004751A0 /* BestTeamEverApp.swift */,
-				549D064B2898396E004751A0 /* Assets.xcassets */,
-				549D064D2898396E004751A0 /* Preview Content */,
 			);
 			path = BestTeamEver;
 			sourceTree = "<group>";
@@ -98,6 +101,16 @@
 				549D065A28984222004751A0 /* PersonListViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		549D066228985A03004751A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				549D064B2898396E004751A0 /* Assets.xcassets */,
+				549D064D2898396E004751A0 /* Preview Content */,
+				549D0660289859FD004751A0 /* RampartOne-Regular.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +173,7 @@
 			files = (
 				549D064F2898396E004751A0 /* Preview Assets.xcassets in Resources */,
 				549D064C2898396E004751A0 /* Assets.xcassets in Resources */,
+				549D0661289859FD004751A0 /* RampartOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,10 +316,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BestTeamEver/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BestTeamEver/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = QAY6XTDMYU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BestTeamEver/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -331,10 +346,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BestTeamEver/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BestTeamEver/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = QAY6XTDMYU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BestTeamEver/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

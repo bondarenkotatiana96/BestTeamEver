@@ -15,7 +15,10 @@ struct PersonListView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
+            VStack {
+            Text("Coding Cats")
+                .font(Font.custom("RampartOne-Regular", size: 30))
+                .bold()
                 NavigationLink {
                     DetailView(person: viewModel.persons[0], personViewModel: viewModel)
                 } label: {
@@ -31,6 +34,11 @@ struct PersonListView: View {
                     }
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
+            
+        }
+        .onAppear {
+            viewModel.loadFromPersistenceStore()
         }
     }
 }
